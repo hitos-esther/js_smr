@@ -9,7 +9,7 @@ function mayMin() {
     
     let cadena = document.getElementById('cadena').value;//cadena original
     let resultado ="" ; //"La cadena \""+resultado+"\" "
-    let cadena2= null;//cadena original vacia objeto null
+    
 
     
     // Comprobar mayúsculas y minúsculas
