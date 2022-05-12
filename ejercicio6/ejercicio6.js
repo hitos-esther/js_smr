@@ -4,19 +4,60 @@
  * */
 
 function esPalindromo() {
-    let palabra = document.getElementById('caracteres').value;
-    let resultadoPalindromo ="";
+    let cadena = document.getElementById('caracteres').value;
+    let numchar = cadena.length;
     // eliminamos los espacios en blanco y mayusculas /minusculas
-    palabra = palabra.replace(/ /g, "");
-    palabra = /[^A-Za-z0-9]/g;
+    cadena = cadena.toLowerCase();
+	var car;
+	var cadena_espac = "";
+	var cadena_reves = "";
 
-    for (let i = 0; i < palabra.length; i++) {
-        if (palabra[i] != palabra[palabra.length - i - 1]) {
-            resultadoPalindromo += ("La palabra <strong> NO es Palindromo</strong>");
-        }
+    for (i = 0; i < numchar; i++) {
+		car = cadena.charAt(i);
+                //Si el caracter es un espacio
+		if (car != " ") {
+			cadena_espac += car;
+			cadena_reves = car + cadena_reves;
+		}
+	}
+    if (cadena_espac == cadena_reves) {
+            document.getElementById("resultadoPalindromo").innerHTML = "La palabra <strong> SI es Palindromo</strong>";
+        
     }
-    resultadoPalindromo += ( "La palabra <strong> SI es Palindromo</strong>");
+    else {
+    document.getElementById("resultadoPalindromo").innerHTML = ( "La palabra <strong> No es Palindromo</strong>");
+        
 }
+}
+/***
+ * function palindromo() {
+    let cadena = document.getElementById("capturaTextoPalindromo").value;
+    let numchar = cadena.length;
+    
+        //Ponemos la cadena en minúsculas
+	cadena = cadena.toLowerCase();
+	var car;
+	var cadena_espac = "";
+	var cadena_reves = "";
+        //Bucle que recorre toda la cadena y va concatenando en dos variables y eliminando espacios
+	for (i = 0; i < numchar; i++) {
+		car = cadena.charAt(i);
+                //Si el caracter es un espacio
+		if (car != " ") {
+			cadena_espac += car;
+			cadena_reves = car + cadena_reves;
+		}
+	}
+	if (cadena_espac == cadena_reves) {
+        document.getElementById("resultado6").innerHTML = "El texto es un palíndromo";
+
+	}
+	else {
+		document.getElementById("resultado6").innerHTML = "El texto NO es un palíndromo";
+	}
+    
+}
+ */
 /**function palindrome(str) {
   // Paso 1. Pon en minuscula la cadena y usa el RexEXP para remover los caracteres no deseados en el.
   var re = /[\W_]/g; // or var re = /[^A-Za-z0-9]/g;
