@@ -21,13 +21,13 @@ function buscarNombre(){
     let mes =Number(document.getElementById("mes").value);
 
     let numeroMes = mes -1;
-    let respuesta ="";
+    //let respuesta ="";
 
-
-    if(numeroMes==-1)
+    let respuesta = (numeroMes == -1)? "no has elegido numero: ": meses[numeroMes];
+   /* if(numeroMes==-1)
         respuesta= "No has elegido numero";
     else
-        respuesta = meses[numeroMes];
+        respuesta = meses[numeroMes];*/
     
 
     document.getElementById("nombreMes").innerHTML=respuesta;
