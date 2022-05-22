@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBANDO OTRAS FORMAS DE ACCEDER</title>
+</head>
+
+<body>
+
+    <!--pagina basica para probar accessos al arbol doom-->
+    <div id="wrapper">
+        <h1 class="centrado rojo">Probando acceso</h1>
+        <p class="centrado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officia! A velit
+            voluptatibus, voluptatum porro aperiam maxime dolores! Repudiandae quae ab odit, illum eveniet voluptates
+            officia omnis minima alias ullam.
+            Inventore minima totam, fugiat, dignissimos maiores recusandae libero molestiae itaque ea ad tenetur
+            eligendi reiciendis perferendis impedit aliquid laboriosam explicabo ex hic. Odit quaerat hic deleniti odio
+            nemo, repellat quae!
+            Laudantium optio, eligendi, tenetur facilis ab error ipsum inventore cupiditate dicta blanditiis obcaecati
+            accusantium? Fuga porro ad modi, incidunt praesentium vero iure cumque rem laboriosam. Minus earum
+            aspernatur quis delectus. </p>
+        <p class="rojo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium est tempore illum atque
+            quisquam. Harum expedita non, recusandae nulla iusto eaque dicta nesciunt nam. Nihil provident officiis
+            quasi hic obcaecati!
+            Voluptatem vitae cupiditate rem similique ducimus, hic deleniti magnam aliquam aliquid labore, fuga cumque
+            repellat placeat sed magni nostrum sunt rerum eligendi, modi harum! Hic molestiae esse mollitia ratione
+            fugiat.
+            Ex in necessitatibus cumque doloremque ut? Saepe id architecto molestias quae aliquid ullam cum porro
+            dignissimos error harum deleniti iste sed, quas doloribus tempora nostrum dolores maiores rem enim corporis?
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo cumque dolores corporis officiis, ut
+            accusantium voluptatum ad voluptatibus est nobis rem illo mollitia maiores tempora cupiditate ex! Officia,
+            accusamus iste?
+            Doloremque consequatur voluptatibus perferendis atque similique obcaecati esse! Quisquam architecto
+            asperiores facilis, ratione, quae nam aut repudiandae non ducimus ad obcaecati nisi aperiam? Earum, rem?
+            Commodi exercitationem aliquam sapiente quis?
+            Repudiandae non eius facere porro minus quas adipisci quo a in nihil. Omnis sequi, eligendi non, atque
+            voluptate odit suscipit cum hic quae, itaque dolorum aut. Blanditiis tenetur facere veniam?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat et cupiditate, eligendi odio dignissimos
+            ipsa ab ex quas veritatis rem aperiam ratione, voluptatem dolorem itaque est reiciendis. Error, cum est!
+            Commodi saepe inventore vitae amet nobis modi, ullam doloribus perferendis nesciunt aliquid ducimus
+            excepturi. Totam eveniet maiores iusto a repudiandae, debitis est itaque, laborum dolor natus facere cumque
+            ea. Laborum!
+            Vero modi magnam praesentium, voluptatem, tempora accusamus quasi eos vel aspernatur repudiandae, porro qui.
+            Quaerat dolore aliquid, in debitis, assumenda repellat vitae sapiente maxime optio provident recusandae
+            voluptatem possimus quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tempore, asperiores repudiandae eveniet,
+            nemo labore tenetur aut saepe cum inventore facere perspiciatis dicta magni! Rem nostrum voluptas maiores ab
+            expedita!
+            Odit dolorum a ipsum laboriosam, saepe nam obcaecati possimus illum ex et? Nihil architecto ipsum vero
+            deleniti minima illo cumque at provident! Ea eligendi saepe nisi. Recusandae, quam. Nostrum, repellat.</p>
+        <button onclick="cambioColor('wrapper','blue')">poner texto en azul</button>
+        <button onclick="cambioColor('wrapper','black')">poner texto en negro</button><br>
+        <hr>
+        <button onclick="parrafosRosa()">Poner fondo en rosa</button><br>
+        <hr>
+        <button onclick="centrar()">centrar</button><br>
+        <hr>
+        <!--aqui usaremos selectores css-->
+        <button onclick="colorearSelect('.rojo')">Cambiar de color</button><br>
+        
+    </div>
+    <script>
+        //acceder mediante id para cambiar estilo
+        function cambioColor(nodo, nuevoColor) {
+            document.getElementById(nodo).style.color = nuevoColor;
+        }
+        //acceder mediante tag para cambiar estilo
+        function parrafosRosa() {
+            let parrafos = document.getElementsByTagName('p');
+
+            for (let i = 0; i < parrafos.length; i++) {
+                parrafos[i].style.backgroundColor = "pink";
+            }
+        }
+        //acceder mediante class para cambiar estilo
+        function centrar() {
+            let centrados = document.getElementsByClassName('centrado');
+
+            for (let i = 0; i < centrados.length; i++) {
+                centrados[i].style.textAlign = "center";
+            }
+        }
+
+         //recibira un selector de estilo, y lo usara para cambiar el color de lo que se seleccione
+         function colorearSelect(selector) {
+            let nodos = document.querySelectorAll(selector);
+
+            for (let i = 0; i < nodos.length; i++) {
+                nodos[i].style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
