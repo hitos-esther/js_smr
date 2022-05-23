@@ -3,6 +3,7 @@
  * 
  * 
  */
+ document.getElementById('buscar').addEventListener("click",buscarNombre);
 function buscarNombre(){
 
     const meses = ["Enero",

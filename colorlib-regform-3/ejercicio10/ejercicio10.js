@@ -3,6 +3,7 @@
  * 
  * 
  */
+ document.getElementById('traducir').addEventListener("click",TraducirNombre);
  function TraducirNombre(){
 
     const meses = {"Enero":"January",

@@ -2,7 +2,7 @@
 
 
 */
-
+document.getElementById('compara').addEventListener("click",comparar);
 function comparar(){
 
 // entrada de datos

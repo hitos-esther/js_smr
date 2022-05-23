@@ -3,6 +3,7 @@
  * 
  * Authora: Esther Hitos Garcia
  */
+ document.getElementById('Function').addEventListener("click",myFunction);
  var x,y,z,mcd,text,text2,text3,resulta;  
  function myFunction() {  
    x = parseFloat(document.getElementById("num1").value);  

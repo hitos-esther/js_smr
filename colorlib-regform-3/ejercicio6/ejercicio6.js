@@ -2,7 +2,7 @@
  * Detecta Cadena de caracteres, y te dice si es palindromo o no 
  * Authora: Esther Hitos Garcia
  * */
-
+document.getElementById('palindromo').addEventListener("click",esPalindromo);
 function esPalindromo() {
     let cadena = document.getElementById('caracteres').value;
     let numchar = cadena.length;

@@ -1,7 +1,7 @@
 /*
 
 */
-
+document.getElementById('letraDNI').addEventListener("click",letraDni);
 function letraDni(){
 
 const LETRAS = "TRWAGMYFPDXBNJZSQVHLCKE";

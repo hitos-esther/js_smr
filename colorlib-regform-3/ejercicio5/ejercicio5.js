@@ -3,7 +3,7 @@
  * Authora: Esther Hitos Garcia
  * */
 
-
+document.getElementById('mayusculaMinuscula').addEventListener("click",mayMin);
 function mayMin() {
 
     

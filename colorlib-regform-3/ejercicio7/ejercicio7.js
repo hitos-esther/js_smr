@@ -3,7 +3,7 @@
  * 
  * Authora: Esther Hitos Garcia
  */
-
+ document.getElementById('Euclides').addEventListener("click",divisionEuclides);
 function divisionEuclides() {
     
     let divi =Number (document.getElementById('dividendo').value);
