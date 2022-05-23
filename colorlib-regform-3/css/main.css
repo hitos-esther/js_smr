@@ -354,6 +354,7 @@ input {
   font-size: 16px;
   color: #ccc;
   background: transparent;
+  /*list-style: none;*/
 }
 
 .input--style-3 {
