@@ -1,6 +1,10 @@
 /**
  * JavaScript de Ejercicio 7
  * 
+ * JavaScript que calcule la división entera 
+ * por el algoritmo de Euclides, entre dos números
+ * y muestre el resultado del cociente y el resto
+ * 
  * Authora: Esther Hitos Garcia
  */
  document.getElementById('Euclides').addEventListener("click",divisionEuclides);

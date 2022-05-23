@@ -1,5 +1,8 @@
 /** JavaScript para el ejercicio 6 
- * Detecta Cadena de caracteres, y te dice si es palindromo o no 
+ * 
+ * Detecta Cadena de caracteres, 
+ * y te dice si es palindromo o no
+ *  
  * Authora: Esther Hitos Garcia
  * */
 document.getElementById('palindromo').addEventListener("click",esPalindromo);

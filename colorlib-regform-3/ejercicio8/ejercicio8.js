@@ -1,5 +1,10 @@
 /**
- * JavaScript de Ejercicio 7
+ * JavaScript de Ejercicio 8
+ * 
+ * JavaScript que calcule la división entera 
+ * por el algoritmo de Euclides, entre dos números
+ * y muestre el resultado del cociente y el resto y
+ * calcularemos el MCD por el método de Euclides
  * 
  * Authora: Esther Hitos Garcia
  */

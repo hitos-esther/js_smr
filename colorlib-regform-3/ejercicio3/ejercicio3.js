@@ -1,7 +1,10 @@
-/*
-
-
-*/
+/** JavaScript para el ejercicio 3 
+ * 3- Invoca desde una página html el código JS que te pida, mediante formulario, los tres lados 
+ * de un triángulo y te devuelva como resultado si éste es equilátero, isósceles o escaleno.
+ * El formulario deberá tener un estilo adecuado, y no admitir que ningún lado esté vacío o no
+ * sea numérico
+ * Authora: Esther Hitos Garcia
+ * */
 document.getElementById('compara').addEventListener("click",comparar);
 function comparar(){
 

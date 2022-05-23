@@ -1,7 +1,12 @@
 /**
+ * JavaScript de Ejercicio 10
  * 
+ *  JSON para almacenar los
+ *  nombres en español y en inglés, y en el select 
+ *  deberá aparecer para elegir, un mes en
+ *  español, y mostrará su traducción al inglés
  * 
- * 
+ * Authora: Esther Hitos Garcia
  */
  document.getElementById('traducir').addEventListener("click",TraducirNombre);
  function TraducirNombre(){

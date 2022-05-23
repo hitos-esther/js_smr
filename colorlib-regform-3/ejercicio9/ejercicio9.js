@@ -1,7 +1,11 @@
 /**
+ * JavaScript de Ejercicio 9
  * 
+ * SCrea en JS un array constante que contenga los nombres de los 12 meses del año. 
+ * A partir de ahí, pide mediante formulario, con un campo select, 
+ * elegir un número de mes, ydeberá aparecer su nombre en pantalla (
  * 
- * 
+ * Authora: Esther Hitos Garcia
  */
  document.getElementById('buscar').addEventListener("click",buscarNombre);
 function buscarNombre(){

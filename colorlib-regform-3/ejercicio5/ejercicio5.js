@@ -1,5 +1,8 @@
 /** JavaScript para el ejercicio 5 
- * Detecta Cadena de caracteres, es mayúsculas o minúsculas 
+ * 
+ * Detecta Cadena de caracteres, 
+ * es mayúsculas o minúsculas 
+ * 
  * Authora: Esther Hitos Garcia
  * */
 
