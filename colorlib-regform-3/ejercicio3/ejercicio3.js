@@ -5,6 +5,8 @@
  * sea numérico
  * Authora: Esther Hitos Garcia
  * */
+
+
 document.getElementById('compara').addEventListener("click",comparar);
 function comparar(){
 
@@ -33,3 +35,21 @@ if ( lado1==lado2 && lado2==lado3 ) {
 document.getElementById('resultadoTipo').innerHTML="El triángulo "+respuesta;
 
 }
+
+function changeColor(x)
+{
+    if(x.style.background=="rgb(247, 211, 88)")
+    {
+        x.style.background="#fff";
+    }else{
+        x.style.background="#F7D358";
+    }
+    return false;
+}
+/*function cambiar () {
+  document.getElementById('cambiar').src = ("../images/cambiocolorfondo.png");
+ }
+ 
+ function volver () {
+  document.getElementById('volver').src = "../images/bg-heading-03.jpg";
+ }*/

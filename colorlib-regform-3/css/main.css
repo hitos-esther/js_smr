@@ -131,6 +131,7 @@ body {
   font-size: 14px;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
@@ -526,6 +527,12 @@ input {
 @media (max-width: 767px) {
   .card-3 {
     display: block;
+  }
+  .card-3 .card-heading {
+    display: block;
+    width: 100%;
+    padding-top: 400px;
+    background-position: center center;
   }
   .card-3 .card-heading {
     display: block;
